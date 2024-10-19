@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log>
+    <action>
+        <timestamp>2023-11-22T13:37:42Z</timestamp>
+        <user>username</user>
+        <command>ls</command>
+        <arguments></arguments>
+        <output>file1.txt file2.txt</output>
+    </action>
+    <action>
+        <timestamp>2023-11-22T13:38:01Z</timestamp>
+        <user>username</user>
+        <command>cd</command>
+        <arguments>dir1</arguments>
+        <output>Directory changed</output>
+    </action>
+    </log>

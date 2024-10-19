@@ -1,0 +1,6 @@
+{
+    "username": "username",
+    "vfs_path": "vfs.zip",
+    "log_path": "log.xml",
+    "start_script": "start.sh"
+}
