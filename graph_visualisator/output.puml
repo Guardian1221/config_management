@@ -1,5 +1,0 @@
-@startuml
-"form-data" --> "axios"
-"proxy-from-env" --> "axios"
-"follow-redirects" --> "axios"
-@enduml
