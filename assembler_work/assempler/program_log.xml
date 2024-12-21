@@ -1,0 +1,5 @@
+<instructions>
+<instruction><opcode>LOAD</opcode><arg1>R1,</arg1><arg2>42</arg2></instruction>
+<instruction><opcode>WRITE</opcode><arg1>R2,</arg1><arg2>44,</arg2></instruction>
+<instruction><opcode>XOR</opcode><arg1>R1,</arg1><arg2>R2,</arg2></instruction>
+</instructions>

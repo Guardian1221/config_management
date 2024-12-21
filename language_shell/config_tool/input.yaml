@@ -1,0 +1,6 @@
+settings:
+  debug: true
+  levels:
+    - info
+    - warn
+    - error
