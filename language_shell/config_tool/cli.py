@@ -19,17 +19,15 @@ def main():
     parser.add_argument('output_file', help='Path to the output file')
     args = parser.parse_args()
 
-    # Читаем входные данные из YAML файла
     with open(args.input_file, 'r') as file:
         input_data = yaml.safe_load(file)
 
     print(f'Входные данные: {input_data}')
     print(f'Собираемся записать результат в файл: {args.output_file}')
     
-    # Здесь добавьте логику обработки данных и записи в выходной файл
-    # Например:
+
     with open(args.output_file, 'w') as file:
-        file.write(str(input_data))  # Пример записи данных
+        file.write(str(input_data))
 
 if __name__ == '__main__':
     main()
