@@ -2,9 +2,6 @@ import struct
 
 # Функция для кодирования инструкции
 def encode_instruction(opcode, args):
-    """
-    Преобразует инструкцию в бинарный формат с учетом операнда и аргументов.
-    """
     if opcode == 'LOAD':
         return struct.pack('<IBH', (26 << 3) | 0x1, args[0], args[1])  # Пример для LOAD
     elif opcode == 'READ':
@@ -26,12 +23,10 @@ def assemble(input_file, output_bin_file, output_log_file):
         parts = line.strip().split()
         opcode = parts[0]
         
-        # Преобразование аргументов, удаляя лишние символы, такие как запятые
-        args = [int(arg.strip('R,')) for arg in parts[1:]]  # Убираем 'R' и запятую
+        args = [int(arg.strip('R,')) for arg in parts[1:]]
         binary = encode_instruction(opcode, args)
         binary_instructions.append(binary)
 
-    # Сохранение бинарных данных в файл
     with open(output_bin_file, 'wb') as bin_file:
         for instruction in binary_instructions:
             bin_file.write(instruction)
