@@ -8,9 +8,6 @@ class ConstantProcessor:
         self.constants[name] = value
 
     def process_expression(self, expression):
-        """
-        Заменяет $ИМЯ$ на значение константы.
-        """
         for name, value in self.constants.items():
             expression = expression.replace(f"${name}$", str(value))
         return expression
